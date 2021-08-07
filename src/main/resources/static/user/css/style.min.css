@@ -278,7 +278,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .bg-white {
-    background-color: cadetblue
+    background-color: rgb(18, 150, 219);
 }
 
 .bg-grey {
@@ -437,8 +437,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     background-position: 0 -360px !important
 }
 
+/*header样式*/
 .header {
-    line-height: 78px;
+    line-height: 80px;
     position: fixed;
     z-index: 10;
     display: block;
@@ -453,10 +454,11 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 .navbar-container {
     position: relative;
-    width: 1040px;
+    width: 1170px;
     max-width: 100%;
     height: 80px;
-    margin: 0 auto
+    margin: 0 auto;
+    background-color: rgb(18, 150, 219);
 }
 
 .navbar-logo {
@@ -1752,7 +1754,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     }
 
     .index-page {
-        padding: 80px 0 0
+        padding: 80px 0 0;
     }
 
     .archive-page {

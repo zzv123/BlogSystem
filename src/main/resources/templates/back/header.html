@@ -42,7 +42,7 @@
                 <ul class="nav navbar-nav navbar-right pull-right">
                     <li class="dropdown">
                         <a th:href="@{index.html}" class="dropdown-toggle profile" data-toggle="dropdown"
-                           aria-expanded="true"><img th:src="@{/assets/img/me.jpg}" alt="user-img"
+                           aria-expanded="true"><img th:src="@{/assets/img/zzv.jpg}" alt="user-img"
                                                      class="img-circle"/> </a>
                         <ul class="dropdown-menu">
                             <form name="logoutform" th:action="@{/logout}" method="post"></form>
@@ -78,7 +78,8 @@
                 </li>
                 <!-- 以下功能尚未实现 -->
                 <li th:class="${active}=='comments'?'active':''">
-                    <a th:class="${active}=='comments'?'waves-effect active':'waves-effect'">
+                    <a th:href="@{/admin/comment}"
+                       th:class="${active}=='comments'?'waves-effect active':'waves-effect'">
                         <i class="fa fa-comments" aria-hidden="true"></i><span> 评论管理 </span></a>
                 </li>
                 <li th:class="${active}=='category'?'active':''">

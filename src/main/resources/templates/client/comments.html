@@ -10,10 +10,10 @@
                     <form name="logoutform" th:action="@{/logout}" method="post"></form>
                     <th:block sec:authorize="isAuthenticated()">
                         Hello，<a data-no-instant="" sec:authentication="name"></a>
-                        如果你想 <a href="javascript:document.logoutform.submit();">注销</a> ?
+                        如果你想要退出登录，请先 <a href="javascript:document.logoutform.submit();">注销</a> ?
                     </th:block>
                     <th:block sec:authorize="isAnonymous()">
-                        用户想要评论，请先<a th:href="@{/login}" title="登录" data-no-instant="">登录</a>!
+                        如果您想要评论，请先<a th:href="@{/login}" title="登录" data-no-instant="">登录</a>!
                     </th:block>
                 </span>
                 <div sec:authorize="isAuthenticated()">
@@ -22,7 +22,7 @@
                         <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
                         <textarea name="text" id="textarea" class="form-control" placeholder="以上信息可以为空,评论不能为空哦!"
                                   required="required" minlength="5" maxlength="2000"></textarea>
-                        <button type="submit" class="submit" id="misubmit">提交</button>
+                        <button type="submit" class="submit" id="misubmit">确认提交</button>
                     </form>
                 </div>
             </div>

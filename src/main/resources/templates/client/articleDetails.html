@@ -8,12 +8,15 @@
 <body>
 <article class="main-content post-page">
     <div class="post-header">
+        <!--文章标题-->
         <h1 class="post-title" itemprop="name headline" th:text="${article.title}"></h1>
+        <!--发布时间-->
         <div class="post-data">
-            <time th:datetime="${commons.dateFormat(article.created)}" itemprop="datePublished" th:text="'发布于 '+ ${commons.dateFormat(article.created)}"></time>
+            <time th:datetime="${commons.dateFormat(article.created)}" itemprop="datePublished" th:text="'发布时间 '+ ${commons.dateFormat(article.created)}"></time>
         </div>
     </div>
     <br />
+    <!--文章详情-->
     <div id="post-content" class="post-content content" th:utext="${commons.article(article.content)}"></div>
 </article>
 <div th:replace="client/comments::comments"></div>

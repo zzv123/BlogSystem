@@ -12,7 +12,7 @@ body {
 .log {
     width:100%;
     height:100%;
-    background:url(../img/back.jpg) #000 no-repeat;
+    background:url(../img/background_img.jpg) #000 no-repeat;
     background-size:100% 100%;
     color:#fafbfc;
 }
@@ -185,9 +185,9 @@ body {
     opacity: 0;
     }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1170px) {
       .blog-fixed {
-        max-width: 1280px;
+        max-width: 1170px;
       }
 }
 .blog-entry-img {

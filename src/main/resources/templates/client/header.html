@@ -22,7 +22,7 @@
     <script th:src="@{/back/js/respond.min.js}"></script>
     <![endif]-->
 </head>
-<body  gtools_scp_screen_capture_injected="true" th:class="${is_post}?'':'bg-
+<body style="width: 100%"  gtools_scp_screen_capture_injected="true" th:class="${is_post}?'':'bg-
 '">
 <!--[if lt IE 8]>
 <div class="browsehappy" role="dialog">
@@ -31,14 +31,16 @@
 <![endif]-->
 <header id="header" class="header bg-white">
     <div class="navbar-container">
+        <!--博客标题-->
         <a th:href="@{/}" class="navbar-logo">小威的个人博客</a>
+        <!--博客菜单-->
         <div class="navbar-menu">
             <form name="logoutform" th:action="@{/logout}" method="post"></form>
             <a class="header-info" sec:authorize="isAnonymous()" th:href="@{/login}" >登录</a>
-            <a class="header-info" sec:authorize="isAuthenticated()" href="javascript:document.logoutform.submit();" >退出</a>
-            <!--<a style="color: #fff" >订阅</a>-->
-            <a  class="header-info" href="/admin">后台管理</a>
+            <a class="header-info" sec:authorize="isAuthenticated()" href="javascript:document.logoutform.submit();" >退出登录</a>
+            <a class="header-info" href="/admin">后台管理</a>
         </div>
+        <!--搜索框-->
         <div class="navbar-search" onclick="">
             <span class="icon-search"></span>
             <form role="search" onsubmit="return false;">
