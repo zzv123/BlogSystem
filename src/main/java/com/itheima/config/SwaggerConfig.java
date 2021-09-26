@@ -24,9 +24,9 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("springboot结合swagger2构建Restful API")
-                .description("这是一个swagger2小型demo")
-                .termsOfServiceUrl("www.baidu.com")
+                .title("Java博客管理系统 API接口文档")
+                .description("记录生活 记录自己")
+                .termsOfServiceUrl("www.zzv123.com")
                 .contact("zzv")
                 .version("0.0.1")
                 .build();
